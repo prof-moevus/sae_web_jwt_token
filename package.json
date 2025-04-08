@@ -1,13 +1,13 @@
 {
   "name": "sae_web_jwt_token",
   "version": "1.0.0",
-  "description": "",
+  "description": "JWT Authentication",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Antoine Moevus",
   "license": "ISC",
   "packageManager": "pnpm@10.7.1"
 }
