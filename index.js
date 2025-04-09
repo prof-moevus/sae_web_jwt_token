@@ -27,12 +27,12 @@ mongoose.connect(uri)
     .catch(err => console.error('Erreur de connexion à MongoDB :', err));
 
 // Importation des routes
-// const authRoutes = require('./routes/auth');
-// const userRoutes = require('./routes/users');
-//
-// // Utilisation des routes
-// app.use('/api/auth', authRoutes);
-// app.use('/api/users', userRoutes);
+const authRoutes = require('./routes/auth');
+const userRoutes = require('./routes/users');
+
+// Utilisation des routes
+app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
 
 // Démarrage du serveur
 const PORT = process.env.PORT || 3000;
