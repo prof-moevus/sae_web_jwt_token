@@ -1,4 +1,5 @@
 $("#heure").text((new Date()).getHours());
+$("#heures").text((new Date()).getHours());
 $("#minutes").text((new Date()).getMinutes());
 $("#secondes").text((new Date()).getSeconds());
 
