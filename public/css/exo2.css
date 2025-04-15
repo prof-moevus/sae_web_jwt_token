@@ -40,3 +40,35 @@ header nav {
 nav a {
     color: #00ffff;
 }
+
+main {
+    margin: 20px;
+}
+.countdown-timer {
+    margin: 20px;
+    padding: 40px;
+    background-color: rgba(16,23,41,0.95);
+    box-shadow: 0 0 30px rgba(0,255,255,0.95);
+    display: flex;
+    flex-flow: row nowrap;
+}
+.countdown-timer p {
+    font-size: 3em;
+}
+
+.timer-sep{
+
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+.sep-display {
+    visibility: hidden;
+}
