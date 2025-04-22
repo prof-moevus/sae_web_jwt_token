@@ -7,6 +7,7 @@
     <script src="/js/exo2.js" defer></script>
     <link rel="stylesheet" href="/css/exo2.css">
 </head>
+
 <body>
 <header>
     <nav> <p><a href="/">Home</a></p></nav>
@@ -25,7 +26,59 @@
 </main>
 
 <footer>
-Antoine Moevus -
+<p>Antoine Moevus -</p>
 </footer>
 </body>
+<script>
+
+    // document.addEventListener('click', function(event) {
+    //     console.log('Document capturé un clic');
+    // }, true);
+    //
+    // document.addEventListener('click', function(event) {
+    //     console.log('Element ciblé')
+    //     console.log(event.currentTarget)
+    // })
+    //
+    // document.addEventListener('click', function(event) {
+    //     console.log('Document a reçu un clic (bubbling)');
+    // }, false);
+
+
+    // $("*").each(function() {
+    //     $(this).on("click", function(e) {
+    //         alert(`Capturing: ${this.tagName}`)
+    //         if (this.tagName.toLocaleLowerCase() === "footer") {
+    //             e.stopPropagation();
+    //         }
+    //     });
+    // })
+
+
+    //
+    // for(let elem of document.querySelectorAll('*')) {
+    //     elem.addEventListener("click", e => {
+    //         alert(`Capturing: ${elem.tagName}`)
+    //         if(elem.tagName.toLocaleLowerCase() === "footer") {
+    //             e.stopPropagation();
+    //         }
+    //     }, true);
+    //     elem.addEventListener("click",
+    //         e => {
+    //             alert(`Bubbling: ${elem.tagName}`)
+    //             if(elem.tagName.toLocaleLowerCase() === "footer") {
+    //                 e.stopPropagation();
+    //             }
+    //         });
+    // }
+
+
+    //
+    // $("nav a").on("click", (e) =>{
+    //     e.preventDefault();
+    //     console.log("allo")
+    //     window.location.href = "/css/exo2.css";
+    // })
+
+</script>
 </html>
