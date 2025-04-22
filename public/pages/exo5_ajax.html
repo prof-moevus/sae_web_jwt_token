@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magic 8-Ball - YesNo API</title>
+  <link rel="stylesheet" href="/css/exo5_ajax.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Magic 8-Ball</h1>
+    <p>Posez votre question et obtenez une réponse du destin!</p>
+  </header>
+
+  <main>
+    <div class="question-box">
+      <form id="question-form">
+        <input type="text" id="question-input" placeholder="Posez votre question ici..." required>
+        <button type="submit" id="ask-button">Demander</button>
+      </form>
+    </div>
+
+    <div class="answer-box" id="answer-container">
+      <div class="loading" id="loading-spinner">
+        <div class="spinner"></div>
+      </div>
+
+      <div class="result" id="result-container" style="display:none;">
+        <div class="question-display" id="question-display"></div>
+        <div class="answer-display" id="answer-display"></div>
+        <div class="gif-container">
+          <img id="answer-gif" src="" alt="Réponse animée">
+        </div>
+      </div>
+    </div>
+
+    <div class="history-box">
+      <h2>Historique</h2>
+      <ul id="history-list"></ul>
+      <button id="clear-history">Effacer l'historique</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Propulsé par <a href="https://yesno.wtf" target="_blank">YesNo.wtf API</a></p>
+  </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/exo5_ajax.js"></script>
+</body>
+</html>
